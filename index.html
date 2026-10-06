@@ -310,22 +310,24 @@
             background: var(--cream);
         }
 
-        .about-grid {
-            display: grid;
-            grid-template-columns: 0.85fr 1.15fr;
-            gap: 100px;
-            align-items: center;
-        }
+       .about-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 70px;
+    align-items: center;
+    transform: translateX(-50px);
+}
 
-        .about-image {
-            height: 650px;
-            overflow: hidden;
-        }
+       .about-image {
+    height: auto;
+}
 
-        .about-image img {
-            height: 100%;
-            transition: transform 0.8s ease;
-        }
+.about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
 
         .about-image:hover img {
             transform: scale(1.04);
@@ -352,6 +354,15 @@
             font-style: italic;
             margin-top: 35px;
         }
+        .signature-logo {
+    margin-top: 20px;
+}
+
+.signature-logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
 
         /* =========================================================
            EXPERIENCE
@@ -492,12 +503,26 @@
             color: var(--brown);
         }
 
-        .visit-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 100px;
-        }
+       .visit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
 
+.map {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .visit-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
         .visit .section-title {
             margin-bottom: 35px;
         }
@@ -835,7 +860,7 @@
             <div class="about-image reveal">
 
                 <img
-                    src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85"
+                    src="images/v2.PNG"
                     alt="Giallo cafe"
                 >
 
@@ -844,7 +869,8 @@
             <div class="about-text reveal">
 
                 <div class="section-label">
-                    Giallo
+                    MANİFESTO
+            
                 </div>
 
                 <h2 class="section-title">
@@ -853,20 +879,44 @@
                 </h2>
 
                 <p>
-                    Giallo, kahvenin sadece içilen bir içecek olmadığına
-                    inananların buluşma noktası.
+                    Bizim için kahve, sadece bir içacek değil.
+topraktan gelen bir yaşam biçimidir. Her
+yaprak, her damla, her çekirdek bir
+hikaye taşır. Biz o hikayeyi sabırla,
+saygıyla ve merakla dinleriz.
+
+Yaprak ve su kökenlerimizi hatırlatır. Her
+şey doğadan gelir doğaya döner.
+
+Akış dengeyi anlatır. Kahvenin aroması,
+suyun dansı, zamanın ritmi. Biz o ritmi
+bozmadan, hissederek demlemeyi
+seçeriz
+
+Üçgen, ritüelimizin sembolüdür. Her
+damla ustalığın ve sakinliğin sonucudur.
+Biz hızın değil, derinliğin peşindeyiz
+
+Giallo'da kahve sadece içilmez. Dinlenir,
+yaşanır, paylaşılır. Çünkü her fincanda
+doğanın sesi, akışın huzuru ve emeğin izi
+vardır.
+
+Kökenin izinde, dengeyi hisset, zamanı
+demle.
                 </p>
 
-                <p>
-                    Güne güzel bir başlangıç yapmak, arkadaşlarınla
-                    uzun bir sohbet etmek veya sadece kendine biraz
-                    zaman ayırmak için tasarlanan sıcak ve samimi
-                    bir atmosfer.
+                
+                   
                 </p>
 
                 <div class="signature">
-                    Giallo.
-                </div>
+    Kurucu ve Head Barista Yunus SAVAŞIR
+</div>
+
+<div class="signature-logo">
+    <img src="images/logo.JPG" alt="Giallo Logo">
+</div>
 
             </div>
 
@@ -982,7 +1032,7 @@
                 </div>
 
                 <a
-                    href="https://instagram.com/"
+                    href="https://instagram.com/giallocoffee/"
                     target="_blank"
                     class="gallery-link"
                 >
@@ -997,8 +1047,7 @@
                 <div class="gallery-item reveal">
 
                     <img
-                        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=85"
-                        alt="Giallo coffee"
+ src="images/3.JPG"                        alt="Giallo coffee"
                     >
 
                 </div>
@@ -1007,7 +1056,7 @@
                 <div class="gallery-item reveal">
 
                     <img
-                        src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85"
+                         src="images/1.JPG"
                         alt="Cafe interior"
                     >
 
@@ -1017,7 +1066,7 @@
                 <div class="gallery-item reveal">
 
                     <img
-                        src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=85"
+                         src="images/4.JPG"
                         alt="Coffee"
                     >
 
@@ -1037,7 +1086,7 @@
                 <div class="gallery-item reveal">
 
                     <img
-                        src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=85"
+                        src="images/y.jpg"
                         alt="Giallo cafe interior"
                     >
 
@@ -1054,96 +1103,103 @@
          VISIT / CONTACT
     ========================================================== -->
 
-    <section class="section visit" id="visit">
+   <section class="section visit" id="visit">
 
-        <div class="container visit-grid">
+    <div class="container visit-grid">
 
-            <div class="reveal">
+        <!-- SOL TARAF: İLETİŞİM -->
 
-                <div class="section-label">
-                    Ziyaret Et
-                </div>
+        <div class="reveal">
 
-                <h2 class="section-title">
-                    Bir kahveye<br>
-                    bekliyoruz.
-                </h2>
-
-                <p class="visit-description">
-                    Giallo'da güzel bir kahve ve güzel bir sohbet
-                    için seni bekliyoruz.
-                </p>
-
-
-                <div class="info-list">
-
-                    <div class="info-item">
-
-                        <div class="info-label">
-                            Adres
-                        </div>
-
-                        <div class="info-value">
-                            Giallo Cafe<br>
-                            Aydın / Söke
-                        </div>
-
-                    </div>
-
-
-                    <div class="info-item">
-
-                        <div class="info-label">
-                            Telefon
-                        </div>
-
-                        <div class="info-value">
-                            +90 5XX XXX XX XX
-                        </div>
-
-                    </div>
-
-
-                    <div class="info-item">
-
-                        <div class="info-label">
-                            Saatler
-                        </div>
-
-                        <div class="info-value">
-                            Hafta içi </i><br>
-                            10:00 — 00:00
-                            Hafta Sonu 
-                            12.00 - 00.00
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="section-label">
+                Ziyaret Et
             </div>
 
+            <h2 class="section-title">
+                Bir kahveye<br>
+                bekliyoruz.
+            </h2>
 
-            <div class="map reveal">
+            <p class="visit-description">
+                Giallo'da güzel bir kahve ve güzel bir sohbet
+                için seni bekliyoruz.
+            </p>
 
-                <!--
-                    BURAYA GERÇEK GOOGLE MAPS LİNKİNİ KOY
-                -->
+            <div class="info-list">
 
-                <a
-                    href="https://maps.google.com/"
-                    target="_blank"
-                    class="map-button"
-                >
-                    Google Maps'te Aç →
-                </a>
+                <div class="info-item">
+
+                    <div class="info-label">
+                        Adres
+                    </div>
+
+                    <div class="info-value">
+                        Yenikent Mah. 32. Sk. 11/A<br>
+                        Söke / Aydın
+                    </div>
+
+                </div>
+
+                <div class="info-item">
+
+                    <div class="info-label">
+                        Telefon
+                    </div>
+
+                    <div class="info-value">
+                        0505 981 44 39
+                    </div>
+
+                </div>
+
+                <div class="info-item">
+
+                    <div class="info-label">
+                        Instagram
+                    </div>
+
+                    <div class="info-value">
+                        @giallocoffee
+                    </div>
+
+                </div>
+
+                <div class="info-item">
+
+                    <div class="info-label">
+                        Çalışma Saatleri
+                    </div>
+
+                    <div class="info-value">
+                        Hafta içi: 10:00 — 00:00<br>
+                        Hafta sonu: 12:00 — 00:00
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
-    </section>
 
+        <!-- SAĞ TARAF: GOOGLE MAPS -->
+
+        <div class="map reveal">
+
+            <a
+                href="https://share.google/qo5NqwQ8OdGIqBeiQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-button"
+            >
+                Google Maps'te Aç →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- =========================================================
          FOOTER
@@ -1171,14 +1227,14 @@
                 <div class="socials">
 
                     <a
-                        href="https://instagram.com/"
+                        href="https://instagram.com/giallocoffee/"
                         target="_blank"
                     >
                         Instagram
                     </a>
 
                     <a
-                        href="https://wa.me/905000000000"
+                        href="https://wa.me/905059814439"
                         target="_blank"
                     >
                         WhatsApp
@@ -1196,7 +1252,7 @@
             <div class="footer-bottom">
 
                 <span>
-                    © 2026 Giallo. Tüm hakları saklıdır.
+                    © 2024 Giallo. Tüm hakları saklıdır.
                 </span>
 
                 <span>
