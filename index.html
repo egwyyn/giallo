@@ -927,6 +927,88 @@
         min-height: 300px;
     }
 } 
+
+/* KAHVELER BÖLÜMÜ */
+.coffees {
+    background: var(--cream);
+    overflow: hidden;
+}
+
+.coffees-header {
+    margin-bottom: 40px;
+}
+
+.coffees-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.coffee-card {
+    width: 100%;
+    aspect-ratio: 4 / 6;
+    perspective: 1200px;
+    cursor: pointer;
+    outline: none;
+}
+
+.coffee-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+}
+
+.coffee-face {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 3px;
+    background: var(--cream-dark);
+}
+
+.coffee-front {
+    transform: rotateY(0deg);
+}
+
+.coffee-back {
+    transform: rotateY(180deg);
+}
+
+.coffee-face img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .coffee-card:hover .coffee-card-inner {
+        transform: rotateY(180deg);
+    }
+}
+
+.coffee-card.is-flipped .coffee-card-inner,
+.coffee-card:focus-visible .coffee-card-inner {
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 1000px) {
+    .coffees-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .coffees-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+}
+
     </style>
 </head>
 
@@ -943,6 +1025,7 @@
         <div class="nav-links">
             <a href="#about">Giallo</a>
             <a href="#experience">Atmosfer</a>
+            <a href="#coffees">Kahveler</a>
             <a href="#gallery">Galeri</a>
             <a href="#visit">İletişim</a>
 
@@ -1157,6 +1240,165 @@ demle.
     <!-- =========================================================
          GALLERY
     ========================================================== -->
+
+<!-- KAHVELER BÖLÜMÜ -->
+<section class="section coffees" id="coffees">
+    <div class="container">
+        <div class="coffees-header">
+            <div class="section-label">Giallo Coffee Collection</div>
+            <h2 class="section-title">Kahveler<span>.</span></h2>
+        </div>
+
+        <div class="coffees-grid">
+
+            <div class="coffee-card" tabindex="0">
+                <div class="coffee-card-inner">
+                    <div class="coffee-face coffee-front">
+                        <img src="images/kahveler/kahve1-on.jpg"
+                             alt="Rwanda Baho kahvesi">
+                    </div>
+                    <div class="coffee-face coffee-back">
+                        <img src="images/kahveler/kahve1-arka.jpg"
+                             alt="Rwanda Baho kahve bilgileri">
+                    </div>
+                </div>
+            </div>
+
+<!-- KART 2 -->
+<div class="coffee-card" tabindex="0">
+    <div class="coffee-card-inner">
+        <div class="coffee-face coffee-front">
+            <img src="images/kahveler/kahve2-on.jpg" alt="Kahve 2">
+        </div>
+        <div class="coffee-face coffee-back">
+            <img src="images/kahveler/kahve2-arka.jpg" alt="Kahve 2 bilgileri">
+        </div>
+    </div>
+</div>
+
+<!-- KART 3 -->
+<div class="coffee-card" tabindex="0">
+    <div class="coffee-card-inner">
+        <div class="coffee-face coffee-front">
+            <img src="images/kahveler/kahve3-on.jpg" alt="Kahve 3">
+        </div>
+        <div class="coffee-face coffee-back">
+            <img src="images/kahveler/kahve3-arka.jpg" alt="Kahve 3 bilgileri">
+        </div>
+    </div>
+</div>
+
+<!-- KART 4 -->
+<div class="coffee-card" tabindex="0">
+    <div class="coffee-card-inner">
+        <div class="coffee-face coffee-front">
+            <img src="images/kahveler/kahve4-on.jpg" alt="Kahve 4">
+        </div>
+        <div class="coffee-face coffee-back">
+            <img src="images/kahveler/kahve4-arka.jpg" alt="Kahve 4 bilgileri">
+        </div>
+    </div>
+</div>
+
+<!-- KART 5 -->
+<div class="coffee-card" tabindex="0">
+    <div class="coffee-card-inner">
+        <div class="coffee-face coffee-front">
+            <img src="images/kahveler/kahve5-on.jpg" alt="Kahve 5">
+        </div>
+        <div class="coffee-face coffee-back">
+            <img src="images/kahveler/kahve5-arka.jpg" alt="Kahve 5 bilgileri">
+        </div>
+    </div>
+</div>
+
+<!-- KART 6 -->
+<div class="coffee-card" tabindex="0">
+    <div class="coffee-card-inner">
+        <div class="coffee-face coffee-front">
+            <img src="images/kahveler/kahve6-on.jpg" alt="Kahve 6">
+        </div>
+        <div class="coffee-face coffee-back">
+            <img src="images/kahveler/kahve6-arka.jpg" alt="Kahve 6 bilgileri">
+        </div>
+    </div>
+</div>
+
+<!-- KART 7 -->
+<div class="coffee-card" tabindex="0">
+    <div class="coffee-card-inner">
+        <div class="coffee-face coffee-front">
+            <img src="images/kahveler/kahve7-on.jpg" alt="Kahve 7">
+        </div>
+        <div class="coffee-face coffee-back">
+            <img src="images/kahveler/kahve7-arka.jpg" alt="Kahve 7 bilgileri">
+        </div>
+    </div>
+</div>
+
+<!-- KART 8 -->
+<div class="coffee-card" tabindex="0">
+    <div class="coffee-card-inner">
+        <div class="coffee-face coffee-front">
+            <img src="images/kahveler/kahve8-on.jpg" alt="Kahve 8">
+        </div>
+        <div class="coffee-face coffee-back">
+            <img src="images/kahveler/kahve8-arka.jpg" alt="Kahve 8 bilgileri">
+        </div>
+    </div>
+</div>
+
+<!-- KART 9 -->
+<div class="coffee-card" tabindex="0">
+    <div class="coffee-card-inner">
+        <div class="coffee-face coffee-front">
+            <img src="images/kahveler/kahve9-on.jpg" alt="Kahve 9">
+        </div>
+        <div class="coffee-face coffee-back">
+            <img src="images/kahveler/kahve9-arka.jpg" alt="Kahve 9 bilgileri">
+        </div>
+    </div>
+</div>
+
+<!-- KART 10 -->
+<div class="coffee-card" tabindex="0">
+    <div class="coffee-card-inner">
+        <div class="coffee-face coffee-front">
+            <img src="images/kahveler/kahve10-on.jpg" alt="Kahve 10">
+        </div>
+        <div class="coffee-face coffee-back">
+            <img src="images/kahveler/kahve10-arka.jpg" alt="Kahve 10 bilgileri">
+        </div>
+    </div>
+</div>
+
+<!-- KART 11 -->
+<div class="coffee-card" tabindex="0">
+    <div class="coffee-card-inner">
+        <div class="coffee-face coffee-front">
+            <img src="images/kahveler/kahve11-on.jpg" alt="Kahve 11">
+        </div>
+        <div class="coffee-face coffee-back">
+            <img src="images/kahveler/kahve11-arka.jpg" alt="Kahve 11 bilgileri">
+        </div>
+    </div>
+</div>
+
+<!-- KART 12 -->
+<div class="coffee-card" tabindex="0">
+    <div class="coffee-card-inner">
+        <div class="coffee-face coffee-front">
+            <img src="images/kahveler/kahve12-on.jpg" alt="Kahve 12">
+        </div>
+        <div class="coffee-face coffee-back">
+            <img src="images/kahveler/kahve12-arka.jpg" alt="Kahve 12 bilgileri">
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+<!-- KAHVELER BÖLÜMÜ SONU -->
 
     <section class="section gallery" id="gallery">
 
@@ -1495,8 +1737,24 @@ demle.
 
         });
 
+document.querySelectorAll(".coffee-card").forEach((card) => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("is-flipped");
+    });
+
+    card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            card.classList.toggle("is-flipped");
+        }
+
+        if (event.key === "Escape") {
+            card.classList.remove("is-flipped");
+        }
+    });
+});
+
     </script>
 
 </body>
 </html>
-```
