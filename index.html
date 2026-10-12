@@ -15,6 +15,22 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
+    
+@font-face {
+    font-family: "DHPafigo";
+    src: url("fonts/dh_pafigo.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+        
+.coffee-hint {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+}
+
         .manifesto-footer {
     display: flex;
     justify-content: space-between;
@@ -353,6 +369,14 @@
             letter-spacing: -2px;
         }
 
+.about .section-title,
+.experience .section-title,
+.coffees .section-title,
+.gallery .section-title,
+.visit .section-title {
+    font-family: "DHPafigo", serif;
+}
+
         /* =========================================================
            ABOUT
         ========================================================= */
@@ -422,10 +446,14 @@
            EXPERIENCE
         ========================================================= */
 
-        .experience {
-            background: var(--brown);
-            color: var(--cream);
-        }
+       
+.experience {
+    background:
+        linear-gradient(rgba(44, 33, 28, 0.72), rgba(44, 33, 28, 0.72)),
+        url("images/v2.PNG") center center / cover no-repeat;
+    color: var(--cream);
+}
+
 
         .experience-top {
             display: grid;
@@ -546,7 +574,26 @@
         .gallery-item:nth-child(5) {
             grid-column: span 8;
             grid-row: span 4;
+        }   
+        
+        .gallery-item:nth-child(6) {
+            grid-column: span 6;
+            grid-row: span 3;
         }
+
+        .gallery-item:nth-child(7) {
+            grid-column: span 6;
+            grid-row: span 3;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.7s ease;
+        }
+
 
         /* =========================================================
            VISIT
@@ -1143,7 +1190,7 @@
             <div class="about-image reveal">
 
                 <img
-                    src="images/v2.PNG"
+                    src="images/tabela.JPG  "
                     alt="Giallo cafe"
                 >
 
@@ -1158,7 +1205,7 @@
 
     <h2 class="section-title">
         Bir kahveden<br>
-        daha fazlası.
+        daha fazlasi.
     </h2>
 
     <div class="manifesto-text">
@@ -1235,7 +1282,7 @@
                     <h2 class="section-title">
                         Burada<br>
                         zaman biraz<br>
-                        yavaşlar.
+                        yavaslar.
                     </h2>
 
                 </div>
@@ -1304,11 +1351,14 @@
     ========================================================== -->
 
 <!-- KAHVELER BÖLÜMÜ -->
+ 
+
 <section class="section coffees" id="coffees">
     <div class="container">
         <div class="coffees-header">
-            <div class="section-label">Giallo Coffee Collection</div>
+            <div class="section-label">Gıallo Coffee Collectıon</div>
             <h2 class="section-title">Kahveler<span>.</span></h2>
+            <p class="coffee-hint">Kahve detayları için künyeye tıklayınız</p>
         </div>
 
         <div class="coffees-grid">
@@ -1476,7 +1526,7 @@
 
                     <h2 class="section-title">
                         Atmosferi<br>
-                        keşfet.
+                        kesfet.
                     </h2>
 
                 </div>
@@ -1497,7 +1547,7 @@
                 <div class="gallery-item reveal">
 
                     <img
- src="images/3.JPG"                        alt="Giallo coffee"
+ src="images/galeri.jpeg"                        alt="Giallo coffee"
                     >
 
                 </div>
@@ -1526,7 +1576,7 @@
                 <div class="gallery-item reveal">
 
                     <img
-                        src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=1000&q=85"
+                        src="images/galeri2.JPG"
                         alt="Coffee shop"
                     >
 
@@ -1536,14 +1586,22 @@
                 <div class="gallery-item reveal">
 
                     <img
-                        src="images/y.JPG"
+                        src="images/galeri3.jpeg"
                         alt="Giallo cafe interior"
                     >
 
                 </div>
 
-            </div>
+            
+                <div class="gallery-item reveal">
+                    <img src="images/galeri4.JPG" alt="Giallo coffee">
+                </div>
 
+                <div class="gallery-item reveal">
+                    <img src="images/galeri5.JPG" alt="Giallo cafe">
+                </div>
+
+            </div>
         </div>
 
     </section>
