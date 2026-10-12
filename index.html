@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Giallo — Coffee & Good Moments</title>
+    <title>Giallo Coffee & Roastery</title>
     <link rel="icon" type="image/png" href="/images/glogo.PNG">
     <meta name="description" content="Giallo — Kahve, atmosfer ve güzel anlar.">
 
@@ -15,6 +15,56 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
+        .manifesto-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.manifesto-logo {
+    width: 110px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.manifesto-footer .signature {
+    margin-top: 0;
+    width: auto;
+    text-align: right;
+}
+        
+        .manifesto-text p {
+    margin: 0 0 20px;
+    line-height: 1.8;
+}
+
+.signature {
+    text-align: right;
+    margin-top: 24px;
+    width: 100%;
+}
+  .hero-logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.hero-logo img {
+    width: 420px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 0 20px;
+}
+        .site-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
         /* =========================================================
            GIALLO - RENKLER
            Buradan sitenin ana renklerini değiştirebilirsin.
@@ -349,12 +399,15 @@
             margin-bottom: 22px;
         }
 
-        .signature {
-            font-family: var(--heading);
-            font-size: 32px;
-            font-style: italic;
-            margin-top: 35px;
-        }
+       .signature {
+    text-align: right;
+    margin-top: 24px;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #6b5b4b;
+}
         .signature-logo {
     margin-top: 20px;
 }
@@ -1021,7 +1074,9 @@
 
     <nav class="navbar" id="navbar">
 
-        <a href="#home" class="logo">GIALLO</a>
+        <a href="#" class="logo">
+  <img src="images/glogo.PNG" alt="Giallo Coffee" class="site-logo">
+</a>
 
         <div class="nav-links">
             <a href="#about">Giallo</a>
@@ -1046,11 +1101,9 @@
 
         <div class="hero-content">
 
-            <div class="hero-small">
-                Coffee · Dessert · Good Moments
-            </div>
-
-            <h1>Giallo</h1>
+           <div class="hero-logo">
+    <img src="images/glogo1.PNG" alt="Giallo Coffee Logo">
+</div>
 
             <p class="hero-description">
                 İyi kahve, güzel atmosfer ve paylaşmaya değer anlar.
@@ -1096,58 +1149,66 @@
 
             </div>
 
-            <div class="about-text reveal">
+           
+<div class="about-text reveal">
 
-                <div class="section-label">
-                    MANİFESTO
-            
-                </div>
+    <div class="section-label">
+        MANİFESTO
+    </div>
 
-                <h2 class="section-title">
-                    Bir kahveden<br>
-                    daha fazlası.
-                </h2>
+    <h2 class="section-title">
+        Bir kahveden<br>
+        daha fazlası.
+    </h2>
 
-                <p>
-                    Bizim için kahve, sadece bir içacek değil.
-topraktan gelen bir yaşam biçimidir. Her
-yaprak, her damla, her çekirdek bir
-hikaye taşır. Biz o hikayeyi sabırla,
-saygıyla ve merakla dinleriz.
+    <div class="manifesto-text">
 
-Yaprak ve su kökenlerimizi hatırlatır. Her
-şey doğadan gelir doğaya döner.
+        <p>
+            Bizim için kahve, sadece bir içecek değil.
+            Topraktan gelen bir yaşam biçimidir. Her
+            yaprak, her damla, her çekirdek bir
+            hikâye taşır. Biz o hikâyeyi sabırla,
+            saygıyla ve merakla dinleriz.
+        </p>
 
-Akış dengeyi anlatır. Kahvenin aroması,
-suyun dansı, zamanın ritmi. Biz o ritmi
-bozmadan, hissederek demlemeyi
-seçeriz
+        <p>
+            Yaprak ve su kökenlerimizi hatırlatır.
+            Her şey doğadan gelir, doğaya döner.
+        </p>
 
-Üçgen, ritüelimizin sembolüdür. Her
-damla ustalığın ve sakinliğin sonucudur.
-Biz hızın değil, derinliğin peşindeyiz
+        <p>
+            Akış dengeyi anlatır. Kahvenin aroması,
+            suyun dansı, zamanın ritmi… Biz o ritmi
+            bozmadan, hissederek demlemeyi seçeriz.
+        </p>
 
-Giallo'da kahve sadece içilmez. Dinlenir,
-yaşanır, paylaşılır. Çünkü her fincanda
-doğanın sesi, akışın huzuru ve emeğin izi
-vardır.
+        <p>
+            Üçgen, ritüelimizin sembolüdür. Her
+            damla ustalığın ve sakinliğin sonucudur.
+            Biz hızın değil, derinliğin peşindeyiz.
+        </p>
 
-Kökenin izinde, dengeyi hisset, zamanı
-demle.
-                </p>
+        <p>
+            Giallo'da kahve sadece içilmez. Dinlenir,
+            yaşanır, paylaşılır. Çünkü her fincanda
+            doğanın sesi, akışın huzuru ve emeğin izi
+            vardır.
+        </p>
 
-                
-                   
-                </p>
+        <p>
+            Kökenin izinde, dengeyi hisset, zamanı
+            demle.
+        </p>
 
-                <div class="signature">
-    Kurucu ve Head Barista Yunus SAVAŞIR
+    </div>
+
+   <div class="manifesto-footer">
+    <img src="images/logo.JPG" alt="Giallo Logo" class="manifesto-logo">
+
+    <div class="signature">
+        Kurucu ve Head Barista Yunus SAVAŞIR
+    </div>
 </div>
-
-<div class="signature-logo">
-    <img src="images/logo.JPG" alt="Giallo Logo">
-</div>
-
             </div>
 
         </div>
