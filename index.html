@@ -17,12 +17,13 @@
     <style>
     
 @font-face {
-    font-family: "DHPafigo";
-    src: url("fonts/dh_pafigo.otf") format("opentype");
-    font-weight: normal;
+    font-family: "FreeSansBold";
+    src: url("fonts/FreeSansBold.otf") format("opentype");
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
+
         
 .coffee-hint {
     font-size: 12px;
@@ -374,7 +375,8 @@
 .coffees .section-title,
 .gallery .section-title,
 .visit .section-title {
-    font-family: "DHPafigo", serif;
+    font-family: "FreeSansBold", sans-serif;
+    font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.3;
 }
@@ -1134,6 +1136,49 @@
     object-fit: contain;
      transform: translateY(-10px);
 }
+/* MOBİL MANİFESTO DÜZENİ */
+@media (max-width: 850px) {
+    .about-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .about-text {
+        display: contents;
+    }
+
+    .about-text .section-label {
+        order: 1;
+    }
+
+    .about-text .section-title {
+        order: 2;
+        margin-bottom: 0;
+    }
+
+    .about-image {
+        order: 3;
+        width: 100%;
+    }
+
+    .manifesto-text {
+        order: 4;
+    }
+
+    .manifesto-footer {
+        order: 5;
+        width: 100%;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .manifesto-footer .signature {
+        white-space: nowrap;
+        font-size: 10px;
+    }
+}
 
     </style>
 </head>
@@ -1230,7 +1275,7 @@
 
     <h2 class="section-title">
         Bir kahveden<br>
-        daha fazlasi.
+        daha fazlası.
     </h2>
 
     <div class="manifesto-text">
@@ -1307,7 +1352,7 @@
                     <h2 class="section-title">
                         Burada<br>
                         zaman biraz<br>
-                        yavaslar.
+                        yavaşlar.
                     </h2>
 
                 </div>
@@ -1551,7 +1596,7 @@
 
                     <h2 class="section-title">
                         Atmosferi<br>
-                        kesfet.
+                        keşfet.
                     </h2>
 
                 </div>
