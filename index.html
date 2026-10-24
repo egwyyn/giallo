@@ -1180,6 +1180,113 @@
     }
 }
 
+
+/* =========================================================
+   ŞUBELER
+========================================================= */
+
+.branches {
+    background: var(--cream-dark);
+    color: var(--brown);
+}
+
+.branches-header {
+    margin-bottom: 45px;
+}
+
+.branches-header .section-title {
+    font-family: "FreeSansBold", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+.branches-description {
+    margin-top: 18px;
+    color: var(--brown-light);
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.branches-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.branch-card {
+    padding: 38px;
+    border: 1px solid rgba(44, 33, 28, 0.18);
+    background: var(--cream);
+    transition: transform 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.branch-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--yellow);
+}
+
+.branch-number {
+    font-family: var(--heading);
+    font-size: 14px;
+    color: var(--brown-light);
+    opacity: 0.7;
+    margin-bottom: 28px;
+}
+
+.branch-card h3 {
+    font-family: "FreeSansBold", sans-serif;
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.branch-card p {
+    color: var(--brown-light);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.branch-map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 18px;
+    border: 1px solid var(--brown);
+    color: var(--brown);
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.branch-map-link:hover {
+    background: var(--yellow);
+    border-color: var(--yellow);
+}
+
+.branch-map-link.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+@media (max-width: 650px) {
+    .branches-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .branch-card {
+        padding: 28px 24px;
+    }
+
+    .branches-header {
+        margin-bottom: 30px;
+    }
+}
+
     </style>
 </head>
 
@@ -1200,6 +1307,7 @@
             <a href="#experience">Atmosfer</a>
             <a href="#coffees">Kahveler</a>
             <a href="#gallery">Galeri</a>
+            <a href="#branches">Şubeler</a>
             <a href="#visit">İletişim</a>
 
             <a href="#visit" class="nav-button">
@@ -1680,6 +1788,86 @@
     <!-- =========================================================
          VISIT / CONTACT
     ========================================================== -->
+
+<!-- =========================================================
+     ŞUBELER
+========================================================== -->
+
+<section class="section branches" id="branches">
+
+    <div class="container">
+
+        <div class="branches-header reveal">
+
+            <div class="section-label">
+                BİZE ULAŞIN
+            </div>
+
+            <h2 class="section-title">
+                Şubelerimiz.
+            </h2>
+
+            <p class="branches-description">
+                Size en yakın Giallo'da buluşalım.
+                Güzel kahve ve güzel anlar için
+                şubelerimizi keşfedin.
+            </p>
+
+        </div>
+
+        <div class="branches-grid">
+
+            <!-- SÖKE ŞUBESİ -->
+
+            <div class="branch-card reveal">
+
+                <div class="branch-number">01 / AYDIN</div>
+
+                <h3>Söke</h3>
+
+                <p>
+                    Aydın / Söke<br>
+                    Kafeler Sokağı, Yenikent, 32. Sk.
+                    
+                </p>
+
+                <a
+                    href="https://share.google/XyE4bkpKhqxjDhaWH"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="branch-map-link"
+                >
+                    Google Maps'te Aç <span>↗</span>
+                </a>
+
+            </div>
+
+            <!-- KÖTEKLİ ŞUBESİ -->
+
+            <div class="branch-card reveal">
+
+                <div class="branch-number">02 / MUĞLA</div>
+
+                <h3>Kötekli</h3>
+
+                <p>
+                    Muğla / Kötekli<br>
+                    Giallo Coffee & Roastery
+                </p>
+
+                <span class="branch-map-link disabled">
+                    Konum yakında eklenecek
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ŞUBELER BÖLÜMÜ SONU -->
 
    <section class="section visit" id="visit">
 
